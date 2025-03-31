@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/image/icono.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Nosotros</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        section {
+            padding: 100px 20px 20px;
+            display: none;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .image-container, .video-container {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .image-container img, .video-container video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .image-container img:hover, .video-container video:hover {
+            transform: scale(1.05);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #222;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Nosotros</header>
+    <nav>
+        <a href="#" onclick="showSection('historia')">Historia</a>
+        <a href="#" onclick="showSection('mision')">Misión</a>
+        <a href="#" onclick="showSection('vision')">Visión</a>
+        <a href="#" onclick="showSection('equipo')">Equipo</a>
+        <a href="#" onclick="showSection('valores')">Valores</a>
+    </nav>
+    <section id="historia" class="active">
+        <h2>Nuestra Historia</h2>
+        <p>En Players, somos un grupo de apasionados por el mundo de los videojuegos que decidió unirse para ofrecer una experiencia única a los gamers y coleccionistas de todo el mundo. Desde nuestra fundación en [año de fundación], nos hemos dedicado a preservar la magia de los videojuegos clásicos y retro, mientras traemos lo último en tecnología para todos aquellos que buscan revivir sus momentos más nostálgicos o descubrir nuevas aventuras.
+
+          <br>
+          <br>
+          Nuestra historia comenzó como un pequeño proyecto de aficionados a los videojuegos retro, que querían compartir su pasión por las consolas clásicas y los juegos que marcaron una época. Con el tiempo, ese sueño se convirtió en una tienda en línea especializada en consolas retro, videojuegos y accesorios. Lo que comenzó como un hobby, hoy es una empresa que conecta a miles de personas con sus recuerdos y pasiones, ofreciendo productos seleccionados con cuidado y experiencia.
+<br>
+<br>
+A lo largo de los años, hemos ampliado nuestra oferta para incluir desde las consolas más antiguas hasta las últimas novedades en tecnología gaming. Nos enorgullece ser una de las tiendas de referencia para los amantes de los videojuegos, siempre con el objetivo de ofrecer calidad, confianza y un excelente servicio al cliente.
+        </p>
+        <div class="image-container">
+            <img src="image/nosotros.jpg" alt="Imagen de muestra">
+        </div>
+    </section>
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>En Players, nuestra misión es ser el puente entre las generaciones de jugadores, preservando la historia de los videojuegos retro mientras impulsamos el futuro del gaming. Queremos que todos, desde los más jóvenes hasta los veteranos, encuentren en nuestra tienda no solo productos, sino también experiencias que los conecten con su pasión por los videojuegos.
+          <br>
+          <br>
+          Nos dedicamos a ofrecer productos de calidad, siempre revisados y garantizados, para que nuestros clientes puedan disfrutar de una experiencia de compra única y sin preocupaciones. Además, buscamos ser un referente en la comunidad gamer, creando un espacio donde todos los jugadores se sientan bienvenidos y parte de una gran familia.</p>
+          <div class="image-container">
+            <img src="image/mision.webp" alt="Imagen de muestra">
+        </div>
+    </section>
+    <section id="vision">
+        <h2>Visión</h2>
+        <p>Ser la tienda líder en el mercado de videojuegos retro y tecnología gaming, reconocida por nuestra pasión, compromiso con la calidad y atención al cliente. Queremos seguir innovando, ampliando nuestra oferta y contribuyendo al crecimiento de la comunidad gamer, sin perder nunca de vista lo que nos hizo comenzar: el amor por los videojuegos y la nostalgia que estos nos traen.
+          <br>
+          <br>
+          A largo plazo, buscamos expandir nuestra presencia tanto a nivel nacional como internacional, llevando lo mejor de los videojuegos a todos los rincones del mundo. Queremos que [Nombre de tu tienda] sea el lugar donde cada gamer, desde el coleccionista hasta el jugador casual, encuentre todo lo que necesita para su experiencia de juego.</p>
+          <div class="image-container">
+            <img src="image/vision.webp" alt="Imagen de muestra">
+        </div>
+    </section>
+    <section id="equipo">
+        <h2>Nuestro Equipo</h2>
+        <p>El corazón de Players está formado por un equipo de expertos que comparten una profunda pasión por los videojuegos. Desde los fundadores hasta los más recientes miembros, todos estamos comprometidos con la calidad de nuestros productos y el bienestar de nuestros clientes. Nuestros conocimientos abarcan desde consolas clásicas y retro, hasta las últimas tecnologías en hardware y software de gaming.
+          <br>
+          <br>
+          Cada miembro de nuestro equipo se dedica a ofrecer un servicio excepcional, tanto en la selección de productos como en el soporte y la atención al cliente. Estamos aquí para ayudarte en cada paso de tu experiencia de compra y asegurarnos de que tengas lo que necesitas para disfrutar al máximo de tu mundo gamer.</p>
+        <div class="video-container">
+            <video controls>
+                <source src="image/equipo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </section>
+    <section id="valores">
+        <h2>Valores</h2>
+        <ul>
+            <li><strong>Pasión por los videojuegos:</strong>Lo que nos mueve todos los días es nuestro amor por los videojuegos. Creemos en el poder de los juegos para conectar a las personas, contar historias y crear experiencias inolvidables.</li>
+            <li><strong>Compromiso con la calidad:</strong>Nos aseguramos de que cada producto que ofrecemos cumpla con los más altos estándares de calidad. Solo trabajamos con marcas confiables y nos aseguramos de que cada consola y juego sea revisado antes de enviarlo a nuestros clientes.</li>
+            <li><strong>Atención al cliente:</strong>Nuestro equipo está siempre dispuesto a ayudarte. Ya sea que necesites asesoramiento sobre qué consola comprar o tengas alguna duda sobre un producto, estamos aquí para ofrecerte el mejor soporte posible.</li>
+            <li><strong>Innovación:</strong>Aunque amamos lo retro, siempre estamos atentos a las últimas tendencias en el mundo de los videojuegos. Nos esforzamos por ofrecer lo mejor de ambos mundos, lo clásico y lo moderno.</li>
+            <li><strong>Comunidad:</strong>Creemos en el poder de la comunidad gamer. Nos encanta interactuar con nuestros clientes, escuchar sus historias y ser parte de sus experiencias. Juntos, creamos un espacio único para todos los jugadores.</li>
+        </ul>
+    </section>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>

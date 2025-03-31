@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 0 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+.encabezado-img {
+    background-image: url(image/Fondo.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #09547f;
+    text-align: center;
+}
+
+.encabezado-img p {
+    font-size: 30px;
+    color: #333;
+
+}
+
+.encabezado-img h1 {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+.contacto-container {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.email-btn {
+    background: #ff8c00;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.email-btn:hover {
+    background: #e67600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.facebook { background: #1877f2; }
+.facebook:hover { background: #1356c7; }
+
+.twitter { background: #1da1f2; }
+.twitter:hover { background: #0c85d0; }
+
+.instagram { background: #e4405f; }
+.instagram:hover { background: #c32aa3; }
+
+@media (max-width: 768px) {
+    .contacto-container {
+        padding: 20px;
+    }
+    .social-icons {
+        flex-direction: column;
+    }
+}
